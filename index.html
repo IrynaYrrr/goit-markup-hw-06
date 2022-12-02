@@ -460,7 +460,7 @@
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form action="" class="modal-form">
           <div class="modal-field">
-            <label for="user-name-id">Ім'я</label>
+            <label for="user-name-id" class="input-label">Ім'я</label>
             <div class="input-wrap">
               <input
                 type="text"
@@ -474,7 +474,7 @@
             </div>
           </div>
           <div class="modal-field">
-            <label for="user-tel-id">Телефон</label>
+            <label for="user-tel-id" class="input-label">Телефон</label>
             <div class="input-wrap">
               <input
                 type="tel"
@@ -488,7 +488,7 @@
             </div>
           </div>
           <div class="modal-field">
-            <label for="user-email-id">Пошта</label>
+            <label for="user-email-id" class="input-label">Пошта</label>
             <div class="input-wrap">
               <input
                 type="email"
@@ -502,18 +502,17 @@
             </div>
           </div>
           <div class="modal-field">
-            <label for="user-comment-id">Коментар</label>
-            <div class="input-wrap">
-              <input
-                type="text"
-                name="user-comment"
-                class="modal-input"
-                placeholder="Введіть текст"
-                id="user-comment-id"
-              />
-            </div>
+            <label for="user-text" class="input-label">Коментар</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-text"
+              placeholder="Введіть текст"
+            ></textarea>
           </div>
-          <button type="submit">Відправити</button>
+          <button class="order-btn" type="submit">
+            Відправити
+          </button>
         </form>
       </div>
     </div>
