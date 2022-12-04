@@ -31,7 +31,7 @@
   --backdrop-bg-color: rgba(0, 0, 0, 0.2);
   --border-modal-btn: rgba(0, 0, 0, 0.1);
   --border-input: rgba(33, 33, 33, 0.2);
-
+  --link-condition-color: rgba(33, 150, 243, 1);
 }
 
 h1,
@@ -706,11 +706,77 @@ body {
   border-color: var(--blue-color);
 }
 
+.hide {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
 .modal-text::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--grey-color);
+}
+
+/* .modal-check:checked + .check-text span {
+  background-color: #ff6c00;
+  border: none;
+  fill: #ffffff;
+}
+
+.modal-check:focus + .check-text span {
+  border-color: #ff6c00;
+} */
+
+.check-text {
+  font-size: 14px;
+  color: #2F303A;
+  display: flex;
+  align-items: center;
+}
+
+.check-text span {
+
+}
+
+/* .check-text::before {
+  content: ' ';
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgb(139, 21, 0);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.modal-check:checked + .check-text::before {
+  background-color: #000000;
+  border: none;
+  background-image: url(../images/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.label-agree {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.condition {
+  color: var(--link-condition-color);
 }
 
 .order-btn {
