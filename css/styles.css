@@ -627,6 +627,10 @@ body {
   pointer-events: none;
 }
 
+.hide {
+  display: none;
+}
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
@@ -663,6 +667,9 @@ body {
   background-color: transparent;
   padding-left: 25px;
   outline: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -689,6 +696,9 @@ body {
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text {
@@ -727,56 +737,38 @@ body {
   color: var(--grey-color);
 }
 
-/* .modal-check:checked + .check-text span {
-  background-color: #ff6c00;
-  border: none;
-  fill: #ffffff;
-}
-
-.modal-check:focus + .check-text span {
-  border-color: #ff6c00;
-} */
-
-.check-text {
-  font-size: 14px;
-  color: #2F303A;
-  display: flex;
-  align-items: center;
-}
-
-.check-text span {
-
-}
-
-/* .check-text::before {
-  content: ' ';
-  width: 16px;
-  height: 15px;
-  border: 2px solid rgb(139, 21, 0);
-  border-radius: 2px;
-  margin-right: 7px;
-}
-
-.modal-check:checked + .check-text::before {
-  background-color: #000000;
-  border: none;
-  background-image: url(../images/check.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
 .label-agree {
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--grey-color);
   display: flex;
   align-items: center;
-  position: relative;
+}
+
+.label-agree span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--black-color);
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.modal-check:checked + .label-agree span {
+  background-color: var(--blue-color);
+  border: none;
+  fill: var(--white-text-color);
 }
 
 .condition {
   color: var(--link-condition-color);
+}
+
+.modal-checkbox {
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .order-btn {
