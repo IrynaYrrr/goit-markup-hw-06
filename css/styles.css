@@ -1,8 +1,4 @@
-
-
-
 /*----------------------------------------------------------------- COMMON------------------------------------------------------------------------ */
-
 
 * {
   margin: 0;
@@ -13,21 +9,21 @@
 
 :root {
   --black-color: #212121;
-  --dark-text-color:#000000;
-  --white-text-color: #FFFFFF;
-  --blue-color: #2196F3;
+  --dark-text-color: #000000;
+  --white-text-color: #ffffff;
+  --blue-color: #2196f3;
   --grey-color: #757575;
-  --background-dark-color: #2F303A;
+  --background-dark-color: #2f303a;
   --background-white-color: rgb(100%, 100%, 100%, 60%);
-  --background-light-color: #F5F4FA;
-  --button-active-color: #188CE8;
-  --line-color: #ECECEC;
-  --hero-bg-color: #C4C4C4;
-  --icon-grey-color: #AFB1B8;
+  --background-light-color: #f5f4fa;
+  --button-active-color: #188ce8;
+  --line-color: #ececec;
+  --hero-bg-color: #c4c4c4;
+  --icon-grey-color: #afb1b8;
   --gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   --white-transparent-color: rgba(255, 255, 255, 0.1);
   --bg-transparent-color: rgba(47, 48, 58, 0.8);
-  --bg-transparent-blue:rgba(33, 150, 243, 0.9);
+  --bg-transparent-blue: rgba(33, 150, 243, 0.9);
   --backdrop-bg-color: rgba(0, 0, 0, 0.2);
   --border-modal-btn: rgba(0, 0, 0, 0.1);
   --border-input: rgba(33, 33, 33, 0.2);
@@ -73,9 +69,7 @@ body {
   margin: 0 auto;
 }
 
-
 /*----------------------------------------------------------------- CONTAINERS------------------------------------------------------------------------ */
-
 
 .container {
   width: 1200px;
@@ -84,9 +78,7 @@ body {
   margin: 0 auto;
 }
 
-
 /*----------------------------------------------------------------- HEADER------------------------------------------------------------------------ */
-
 
 .header {
   border-bottom: 1px solid var(--line-color);
@@ -157,7 +149,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts-link:hover, .header-contacts-link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--blue-color);
 }
 
@@ -204,7 +197,7 @@ body {
 
 .hero {
   background-color: var(--hero-bg-color);
-  background-image:var(--gradient), url(../images/hero-bg.jpg);
+  background-image: var(--gradient), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -351,7 +344,8 @@ body {
 .our-team-item {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-text-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-text-wrap {
@@ -420,13 +414,7 @@ body {
   fill: var(--white-text-color);
 }
 
-
-
-
 /*----------------------------------------------------------------- CLIENTS------------------------------------------------------------------------ */
-
-
-
 
 .our-clients-list {
   display: flex;
@@ -472,11 +460,7 @@ body {
   fill: var(--blue-color);
 }
 
-
 /*--------------------------------------------- FOOTER------------------------------------------------------------- */
-
-
-
 
 .footer {
   background-color: var(--background-dark-color);
@@ -532,7 +516,8 @@ body {
   gap: 70px;
 }
 
-.join-to, .subscribe-to {
+.join-to,
+.subscribe-to {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -652,12 +637,7 @@ body {
   top: 13px;
 }
 
-
-
 /*-----------------------------------------BACKDROP---------------------------------------------------------------- */
-
-
-
 
 .backdrop {
   position: fixed;
@@ -873,7 +853,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .order-btn:hover,
 .order-btn:focus {
   background-color: var(--button-active-color);
@@ -881,7 +860,6 @@ body {
 }
 
 /*-------------------------------------------- PORTFOLIO----------------------------------------------------- */
-
 
 .select-btns-list {
   display: flex;
@@ -910,13 +888,15 @@ body {
 .select-btn:hover {
   background-color: var(--blue-color);
   color: var(--white-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .select-btn:focus {
   background-color: var(--blue-color);
   color: var(--white-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .select-project-list {
@@ -938,7 +918,8 @@ body {
 }
 
 .select-project-link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .select-project-link:hover .project-text-top {
