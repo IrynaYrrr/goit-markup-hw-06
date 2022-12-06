@@ -513,6 +513,7 @@ body {
 .footer-info {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
   gap: 70px;
 }
 
@@ -582,6 +583,7 @@ body {
   border-radius: 4px;
   border: 1px solid var(--subscribe-modal-color);
   background-color: transparent;
+  color: var(--white-text-color);
   padding-left: 25px;
   margin-right: 12px;
   outline: transparent;
@@ -675,6 +677,10 @@ body {
   background-color: transparent;
 }
 
+.modal-close-btn:hover {
+  fill: var(--blue-color);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -743,7 +749,7 @@ body {
 
 .modal-icon {
   position: absolute;
-  left: 5px;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
   transition-property: fill;
@@ -787,7 +793,7 @@ body {
   word-wrap: normal !important;
 }
 
-.modal-text::placeholder {
+.modal-textarea::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -799,6 +805,7 @@ body {
   color: var(--grey-color);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .label-agree span {
@@ -827,8 +834,8 @@ body {
 }
 
 .modal-checkbox {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .order-btn {
